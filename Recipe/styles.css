@@ -1,0 +1,235 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+  *
+  body{
+    margin: 0;
+    padding: 0;
+    transition: 0.5%;
+    font-family: 'Poppins', sans-serif;
+  }
+  .container-fluid
+  {
+    width: 100%;
+    height: 200vh;
+    background-image: linear-gradient(to left,rgba(0,0,0,0.5)50%,rgba(0,
+    0,0,0.5)80%), url(IMG_8533.WEBP);
+  }
+  .container
+  {
+    width: 1200px;
+    height: 80px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo
+  {
+    color: #fff;
+    cursor: pointer;
+  }
+  nav ul
+  {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  nav ul li
+  {
+    margin-right: 30px;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 400;
+    font-size: 15px;
+  }
+  .active
+  {
+    color: #058283;
+  }
+  nav ul li
+  {
+    color: #058283;
+  }
+  .button
+  {
+    width: 120px;
+    height: 45px;
+    border-radius: 8px;
+    border: none;
+    background: #058283;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  .button:hover
+  {
+    background: #fff;
+    color: #058505;
+  }
+  .information
+  {
+    width: 1200px;
+    height: 100vh;
+    margin: auto;
+  }
+  .information h3
+  {
+    color: #058283;
+    padding-top: 100px;
+    font-weight: 400;
+  }
+  .information h1
+  {
+    font-size: 80px;
+    color: #fff;
+    margin-top: 20px;
+    line-height: 75px;
+  }
+  .information p
+  {
+    color: #f1f1f1;
+    font-size: 16px;
+    margin-top: 30px;
+    line-height: 30px;
+    letter-spacing: 1px;
+  }
+  information button
+  {
+    margin-top: 20px;
+    width: 150px;
+    height: 50px;
+    font-size: 16px;
+    letter-spacing: 1px;
+  }
+  .information .btn2
+  {
+    background: transparent;
+    border: 1px solid #058283;
+    border-radius: 8px;
+    color: #fff;
+    margin-left: 10px;
+  } 
+  .information .btn2:hover
+  {
+    background: #058283;
+  }
+.newspaper {
+  column-count: 3;
+}
+* {
+    box-sizing: border-box;
+  }
+.container {
+    position: relative;
+    border-radius: 5px;
+    padding: 50px 180px 160px 70px;
+  } 
+input,
+  .btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    margin: 5px 0;
+    opacity: 0.85;
+    display: inline-block;
+    font-size: 17px;
+    line-height: 20px;
+    text-decoration: none; /* remove underline from anchors */
+  }
+  
+  input:hover,
+  .btn:hover {
+    opacity: 1;
+  }
+  
+  /* add appropriate colors to fb, twitter and google buttons */
+  .fb {
+    background-color: #3B5998;
+    color: white;
+  }
+  
+  .twitter {
+    background-color: #55ACEE;
+    color: white;
+  }
+  
+  .google {
+    background-color: #dd4b39;
+    color: white;
+  }
+  
+  /* style the submit button */
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Two-column layout */
+  .col {
+    float: left;
+    width: 50%;
+    margin: auto;
+    padding: 0 50px;
+    margin-top: 6px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* vertical line */
+  .vl {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    border: 2px solid #ddd;
+    height: 175px;
+  }
+  
+  /* text inside the vertical line */
+  .vl-innertext {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    padding: 8px 10px;
+  }
+  
+  /* hide some text on medium and large screens */
+  .hide-md-lg {
+    display: none;
+  }
+  
+  /* bottom container */
+  .bottom-container {
+    text-align: center;
+    background-color: #666;
+    border-radius: 0px 0px 4px 4px;
+  }
+  
+  /* Responsive layout - when the screen is less than 650px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 650px) {
+    .col {
+      width: 100%;
+      margin-top: 0;
+    }
+    /* hide the vertical line */
+    .vl {
+      display: none;
+    }
+    /* show the hidden text on small screens */
+    .hide-md-lg {
+      display: block;
+      text-align: center;
+    }
